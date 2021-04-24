@@ -1,0 +1,41 @@
+.about {
+    display: flex;
+    height: auto;
+    margin: 0 5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    align-items: center;
+}
+
+.about .image{
+    border-radius: 5px;
+    margin-right: 1rem;  
+    width: 49%;  
+    height: auto;
+}
+
+.about .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem 1rem;
+    height: 100%;    
+    background-color: red;
+    background: #FFFFFF;
+    border-radius: 5px;
+    text-align: center;
+    width: 46%;
+}
+@media screen and  (max-width:1152px) {
+    .about {
+    justify-content: center;
+    }
+    .about .image{  
+    margin-right: 0; 
+    width: 100%;
+    }    
+    .about .text {
+    width: 100%;
+}
+}
