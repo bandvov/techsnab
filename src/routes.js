@@ -1,13 +1,18 @@
-import { Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from "./components/header";
 import Footer from "./components/footer";
-import MainDiv from "./components/main-div";
+import MainPage from "./components/pages/main-page";
 
 function Routes() {
   return (
     <>
       <Header />
-      <MainDiv />
+      <BrowserRouter>
+        <Switch>
+          <Route to="/" component={MainPage}></Route>
+        </Switch>
+      </BrowserRouter>
+
       <Footer />
     </>
   );
